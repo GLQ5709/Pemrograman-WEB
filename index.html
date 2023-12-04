@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Beranda</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 97.5%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./Logo-Unpam-Universitas-Pamulang-Original-PNG-1.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top me-2">
+            <span class="text-light">RYO AKBAR</span>
+        </a>
+        <div class="ms-auto d-flex align-items-center">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Kumpulan Tugas Pertemuan
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                    <a class="dropdown-item" href="./Pert-3_Latihan-1.html">Pert-3_Latihan-1</a>
+                    <a class="dropdown-item" href="./Pert-3_Latihan-2.html">Pert-3_Latihan-2</a>
+                    <a class="dropdown-item" href="./Pert-3_Tugas.html">Pert-3_Tugas</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-4_Tugas.html">Pert-4_Tugas</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-5_Latihan-1_Home.html">Pert-5_Latihan-1</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-6_Latihan-1.html">Pert-6_Latihan-1</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-6_Latihan-2.html">Pert-6_Latihan-2</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-6_Tugas.html">Pert-6_Tugas</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-7_Latihan-1.html">Pert-7_Latihan-1</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-7_Latihan-2.html">Pert-7_Latihan-2</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-7_Tugas_Home.html">Pert-7_Tugas</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-8_Latihan-1.html">Pert-8_Latihan-1</a>
+                    <a class="dropdown-item" href="./Pert-8_Tugas.html">Pert-8_Tugas</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-9_Latihan-1_Index.html">Pert-9_Latihan-1</a>
+                    <a class="dropdown-item" href="./Pert-9_Tugas_Index.html">Pert-9_Tugas</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-10_Latihan-1.html">Pert-10_Latihan-1</a>
+                    <a class="dropdown-item" href="./Pert-10_Latihan-2.html">Pert-10_Latihan-2</a>
+                    <a class="dropdown-item" href="./Pert-10_Tugas.html">Pert-10_Tugas</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-11_Latihan-1.html">Pert-11_Latihan-1</a>
+                    <a class="dropdown-item" href="./Pert-11_Latihan-2.html">Pert-11_Latihan-2</a>
+                    <a class="dropdown-item" href="./Pert-11_Latihan-3.html">Pert-11_Latihan-3</a>
+                    <a class="dropdown-item" href="./Pert-11_Latihan-4.html">Pert-11_Latihan-4</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-12_Latihan-1.html">Pert-12_Latihan-1</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-12_Latihan-3.html">Pert-12_Latihan-2 & Latihan-3</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-13_Latihan-1.html">Pert-13_Latihan-1</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-13_Latihan-2.html">Pert-13_Latihan-2</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-13_Latihan-3.html">Pert-13_Latihan-3</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-13_Latihan-4.html">Pert-13_Latihan-4</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-13_Latihan-5.html">Pert-13_Latihan-5</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-13_Tugas.html">Pert-13_Tugas</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-14_Latihan-1.html">Pert-14_Latihan-1</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-14_Latihan-2.html">Pert-14_Latihan-2</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-15_Latihan-1.html">Pert-15_Latihan-1</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-15_Latihan-2.html">Pert-15_Latihan-2</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-15_Latihan-3.html">Pert-15_Latihan-3</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-15_Latihan-4.html">Pert-15_Latihan-4</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-15_Latihan-5.html">Pert-15_Latihan-5</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-15_Latihan-6.html">Pert-15_Latihan-6</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-15_Latihan-7.html">Pert-15_Latihan-7</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-15_Latihan-8.html">Pert-15_Latihan-8</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-15_Latihan-9.html">Pert-15_Latihan-9</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-15_Tugas.html">Pert-15_Tugas</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-16_Latihan-1.html">Pert-16_Latihan-1</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-16_Latihan-2.html">Pert-16_Latihan-2</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-16_Latihan-4.html">Pert-16_Latihan-3</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-16_Latihan-5.html">Pert-16_Latihan-4</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-16_Tugas.html">Pert-16_Tugas</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-17_Latihan-1.html">Pert-17_Latihan-1</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-17_Latihan-2.html">Pert-17_Latihan-2</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-17_Latihan-3.html">Pert-17_Latihan-3</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-17_Latihan-4.html">Pert-17_Latihan-4</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-17_Latihan-5.html">Pert-17_Latihan-5</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-17_Latihan-6.html">Pert-17_Latihan-6</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-17_Latihan-7.html">Pert-17_Latihan-7</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-17_Latihan-8.html">Pert-17_Latihan-8</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-17_Latihan-9.html">Pert-17_Latihan-9</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-17_Latihan-10.html">Pert-17_Latihan-10</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-18_Latihan-1.html">Pert-18_Latihan-1</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-18_Latihan-2.html">Pert-18_Latihan-2</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-18_Latihan-3.html">Pert-18_Latihan-3</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-18_Latihan-4.html">Pert-18_Latihan-4</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-18_Latihan-5.html">Pert-18_Latihan-5</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-18_Latihan-6.html">Pert-18_Latihan-6</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-18_Latihan-7.html">Pert-18_Latihan-7</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="./Pert-18_Latihan-8.html">Pert-18_Latihan-8</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </nav>
+    
+    <div class="container-fluid mt-5 bg-dark">
+        <!--HERO-->
+        <div id="home" class="container-fluid mt-5" style="background-color: turquoise; padding: 200px;">
+            <div class="container-fluid bg-dark" style="padding: 20px;">
+                <img src="./Foto - Ryo.jpg" class="rounded mx-auto d-block" width="150" height="200" alt="Foto - Ryo">
+                <div style="color: #ffff;">
+                    <h2 class="text-center">RYO AKBAR</h2>
+                    <p class="text-center">211011400877 - 05TPLM004 - PEMROGRAMAN WEB</p>
+                </div>
+            </div>
+        </div>
+        <!--ABOUT-->
+        <div id="about" class="container-fluid mt-5" style="background-color: yellow; padding: 100px;">
+            <div class="card mb-3" style="max-width: 1000px;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="./Gambar-Kampus-1.jpg" class="img rounded-start" height="176" width="200" alt="Gambar-Kampus-1">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">About Me!</h5>
+                            <p class="card-text">Perkenalkan nama saya Ryo Akbar, saya seorang mahasiswa di Universitas Pamulang Kampus 2 (Viktor) yang sedang menempuh pendidikan S1 fakultas ilmu komputer dan Program Studi yang saya pilih adalah Teknik Informatika.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated "Kapanpun saya mau"</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--GALLERY-->
+        <div id="gallery" class="container-fluid mt-5" style="background-color: slateblue; padding: 100px;">
+            <div class="card-group">
+                <div class="card">
+                    <img src="./Gambar-Kampus-2.png" class="card-img-top" alt="Gambar-Kampus 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Kampus 1</h5>
+                    <p class="card-text">Ini merupakan Universitas Pamulang Kampus 1, yang berlokasi deket bunderan yang ada Kantor Polisi</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated "Kapanpun saya mau"</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Logo-Unpam-Universitas-Pamulang-Original-PNG-1.png" height="250px" class="card-img-top" alt="Logo-Unpam">
+                    <div class="card-body">
+                    <h5 class="card-title">Logo Kampus</h5>
+                    <p class="card-text">Ini merupakan logo dari Universitas Pamulang.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Gambar-Kampus-1.jpg" class="card-img-top" alt="Gambar-Kampus-1">
+                    <div class="card-body">
+                    <h5 class="card-title">Kampus 2</h5>
+                    <p class="card-text">Ini merupakan Universitas Pamulang Kampus 2, yang berlokasi di viktor depan pom bensin</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated "Kapanpun saya mau"</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTACT-->
+        <div id="contact" class="container-fluid mt-5" style="background-color: chartreuse; padding: 200px;">
+            <div class="container-fluid bg-primary" style="padding: 20px;">
+                <div class="container">
+                    <h1>Hubungi Saya!</h1>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Nama:</label>
+                            <input type="text" id="name name="name" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="message">Isi Pesan:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" href="mailto:faustdragnar.gmail.com">Submit</button>
+                        </div>
+                        <p>Jika tidak bisa terkirim maka klik ini -> <a href="mailto:faustdragnar.gmail.com" style="color:#4CAF50; text-decoration: none;">email</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <footer class="bg-dark text-white text-center p-3 fixed-bottom">
+        <p>&copy; 2023 Ryo Akbar, All rights reserved.</p>
+    </footer>
+</body>
+</html>
