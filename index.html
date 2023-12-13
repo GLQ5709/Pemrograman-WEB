@@ -376,10 +376,14 @@
             <div class="container-fluid bg-primary" style="padding: 20px;">
                 <div class="container">
                     <h1>Hubungi Saya!</h1>
+                    <div class="alert alert-success alert-dismissible fade show d-none pemberitahuan" role="alert">
+                        <strong>Terima Kasih!</strong> Pesan Anda Sudah Terkirim.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                     <form action="#" method="post">
                         <div class="form-group">
                             <label for="name">Nama:</label>
-                            <input type="text" id="name name="name" required>
+                            <input type="text" id="name" name="name" required>
                         </div>
             
                         <div class="form-group">
@@ -392,7 +396,11 @@
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" href="mailto:faustdragnar.gmail.com">Submit</button>
+                            <button type="submit" class="btn-submit">Submit</button>
+                            <button class="btn btn-primary btn-tunggu d-none" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                                <span role="status">Loading...</span>
+                            </button>
                         </div>
                         <p>Jika tidak bisa terkirim maka klik ini -> <a href="mailto:faustdragnar.gmail.com" style="color:#4CAF50; text-decoration: none;">email</a></p>
                     </form>
@@ -403,5 +411,28 @@
     <footer class="bg-dark text-white text-center p-3 fixed-bottom">
         <p>&copy; 2023 Ryo Akbar, All rights reserved.</p>
     </footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyV9Dtr6mpETx0sZeJhB8SzKlmPK5gBa9jeaJS6v7b_lpuN9JPjNXYqqoftFnZYUghw/exec'
+        const form = document.forms['Webhost-Contact'];
+        const btnsubmit = document.querySelector('.btn-submit');
+        const btntunggu = document.querySelector('.btn-tunggu');
+        const pemberitahuan = document.querySelector('.pemberitahuan');
+
+        form.addEventListener('submit', e => {
+        e.preventDefault();
+        btntunggu.classList.toggle('d-none');
+        btnsubmit.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                btntunggu.classList.toggle('d-none');
+                btnsubmit.classList.toggle('d-none');
+                pemberitahuan.classList.toggle('d-none');
+                form.reset();
+                console.log('Success!', response)
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 </html>
